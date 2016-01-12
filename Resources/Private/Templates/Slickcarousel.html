@@ -1,4 +1,5 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
 	 data-namespace-typo3-fluid="true">
 
@@ -6,16 +7,15 @@
 
 	<f:section name="Main">
 		<div class="slick-slider slick-default" id="slick-id{data.uid}">
-			<f:for each="{slickimages}" as="file" iteration="i">
-				<div class="slick-item">
-					<figure>
-						<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1980)}" title="{file.title}" alt="{file.alternative}" />
-						<f:if condition="{file.description}">
-							<figcaption>{file.description}</figcaption>
-						</f:if>
-					</figure>
-				</div>
-			</f:for>
+			<f:if condition="{data.pi_flexform.randomSlide} == 'vhs'">
+				<f:then>
+					<v:render.uncache partial="Images" section="Random" />
+				</f:then>
+
+				<f:else>
+					<f:render partial="Images" section="Main" />
+				</f:else>
+			</f:if>
 		</div>
 		<f:render partial="AssetAll" section="JS-Responsive" arguments="{_all}" />
 	</f:section>
