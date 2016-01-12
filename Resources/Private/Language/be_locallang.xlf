@@ -84,6 +84,9 @@
 			<trans-unit id="initialSlide" xml:space="preserve">
 				<source>initialSlide: Slide to start on</source>
 			</trans-unit>
+			<trans-unit id="randomSlide" xml:space="preserve">
+				<source>randomSlide: Select random starting slide</source>
+			</trans-unit>
 			<trans-unit id="lazyLoad" xml:space="preserve">
 				<source>lazyLoad: Accepts 'ondemand' or 'progressive' for lazy load technique</source>
 			</trans-unit>
