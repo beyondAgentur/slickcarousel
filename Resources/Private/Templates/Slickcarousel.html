@@ -9,7 +9,7 @@
 		<div class="slick-slider slick-default" id="slick-id{data.uid}">
 			<f:if condition="{data.pi_flexform.randomSlide} == 'vhs'">
 				<f:then>
-					<v:render.uncache partial="Images" section="Random" />
+					<f:render partial="Images" section="Random" arguments="{_all}" />
 				</f:then>
 
 				<f:else>
