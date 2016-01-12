@@ -19,7 +19,7 @@
 	</f:section>
 
 	<f:section name="Random">
-		<v:iterator.random subject="{slickimages}" as="slickimages" />
+		<v:iterator.sort subject="{slickimages}" as="slickimages" order="RAND" />
 
 		<f:for each="{slickimages}" as="file" iteration="i">
 			<div class="slick-item">
