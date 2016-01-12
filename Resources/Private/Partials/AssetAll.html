@@ -29,10 +29,10 @@
 					infinite: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.infinite)}</f:format.raw>,
 					<f:if condition="{data.pi_flexform.randomSlide}">
 						<f:then>
-							initialSlide: <f:format.raw>{data.pi_flexform.initialSlide}</f:format.raw>,
+							initialSlide: rand,
 						</f:then>
 						<f:else>
-							initialSlide: rand,
+							initialSlide: <f:format.raw>{data.pi_flexform.initialSlide}</f:format.raw>,
 						</f:else>
 					</f:if>
 					lazyLoad: '<f:format.raw>{data.pi_flexform.lazyLoad}</f:format.raw>',
