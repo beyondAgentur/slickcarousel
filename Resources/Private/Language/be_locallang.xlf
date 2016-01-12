@@ -85,10 +85,10 @@
 				<source>initialSlide: Slide to start on</source>
 			</trans-unit>
 			<trans-unit id="randomSlide" xml:space="preserve">
-				<source>randomSlide: Select random starting slide</source>
+				<source>randomSlide: Select random mode</source>
 			</trans-unit>
 			<trans-unit id="randomSlide.none" xml:space="preserve">
-				<source>No</source>
+				<source>Off</source>
 			</trans-unit>
 			<trans-unit id="randomSlide.js" xml:space="preserve">
 				<source>Random starting slide (pseudo random)</source>

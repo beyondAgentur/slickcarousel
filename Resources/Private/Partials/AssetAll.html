@@ -7,7 +7,7 @@
 	<f:section name="JS-Responsive">
 		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
 			$(document).ready(function () {
-				<f:if condition="{data.pi_flexform.randomSlide}">
+				<f:if condition="{data.pi_flexform.randomSlide} == 'js'">
 					var total = $('#slick-id{data.uid} img').length,
 					rand = Math.floor( Math.random() * total );
 				</f:if>
@@ -27,7 +27,7 @@
 					fade: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.fade)}</f:format.raw>,
 					mobileFirst: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.mobileFirst)}</f:format.raw>,
 					infinite: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.infinite)}</f:format.raw>,
-					<f:if condition="{data.pi_flexform.randomSlide}">
+					<f:if condition="{data.pi_flexform.randomSlide} == 'js'">
 						<f:then>
 							initialSlide: rand,
 						</f:then>
