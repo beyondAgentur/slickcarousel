@@ -41,6 +41,11 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.2.0
+    * Easing is now default and working [cssEase: cubic-bezier(0.950, 0.050, 0.795, 0.035)]
+    * CSS improvements (thx to Oliver Oertel from analog.de)
+* Version: 0.1.0
+    * Random sorting for Expert Slider
 * Version: 0.0.5
 	* CSS fixes
 	* Add Grunt task to build CSS file
