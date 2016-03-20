@@ -1,6 +1,9 @@
 #slick - the last carousel you'll ever need
 
-### this is a typo3 (7LTS) extenions of the slick carousel 
+### this is a typo3 (7LTS) extenions of the slick carousel
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/?branch=develop)
+[![Build Status](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/build-status/develop)
 
 <img src="http://snag.gy/jsI2I.jpg" alt="alt text" style="width:400px;height:auto">
 
@@ -41,10 +44,13 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.2.2
+    * Changed description
+    * Bugfix: (TS) jQuery force on top
 * Version: 0.2.1
     * Bugfix: (TS) JS include switch
 * Version: 0.2.0
-    * Easing is now default and working [cssEase: cubic-bezier(0.950, 0.050, 0.795, 0.035)]
+    * Easing is now default and working [cssEase: cubic-bezier(0.455, 0.03, 0.515, 0.955)]
     * CSS improvements (thx to Oliver Oertel from analog.de)
 * Version: 0.1.0
     * Random sorting for Expert Slider
